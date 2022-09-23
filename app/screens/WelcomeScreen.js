@@ -12,9 +12,8 @@ import colors from "../config/colors";
 
 function WelcomeScreen({ navigation }) {
   const pressHandler = () => {
-    navigation.navigate("ViewImage");
+    navigation.navigate("Login");
   };
-
   return (
     <ImageBackground
       style={styles.background}
@@ -27,12 +26,11 @@ function WelcomeScreen({ navigation }) {
         />
         <Text style={styles.logoText}>sell what you don't need</Text>
       </View>
-
       <TouchableHighlight style={styles.loginButton} onPress={pressHandler}>
-        <Text style={styles.logingText}>Log in</Text>
+        <Text style={styles.loginText}>Log in</Text>
       </TouchableHighlight>
       <View style={styles.registerButton}>
-        <Text style={styles.logingText}>New here? Register</Text>
+        <Text style={styles.loginText}>New here? Register</Text>
       </View>
     </ImageBackground>
   );
@@ -52,7 +50,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 37,
   },
-  logingText: {
+  loginText: {
     fontSize: 23,
     fontWeight: "bold",
   },
