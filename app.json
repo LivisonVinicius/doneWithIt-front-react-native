@@ -4,10 +4,10 @@
     "slug": "DoneWithIt",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./app/assets/logo.png",
+    "icon": "./app/assets/DWI_logo.jpeg",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./app/assets/logo.png",
+      "image": "./app/assets/DWI_logo.jpeg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -21,12 +21,12 @@
     "description": "A marketplace for selling the stuff you don't need anymore.",
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./app/assets/logo.png",
+        "foregroundImage": "./app/assets/DWI_logo.jpeg",
         "backgroundColor": "#FFFFFF"
       }
     },
     "web": {
-      "favicon": "./app/assets/logo.png"
+      "favicon": "./app/assets/DWI_logo.jpeg"
     }
   }
 }

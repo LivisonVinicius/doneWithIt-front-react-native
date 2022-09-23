@@ -1,16 +1,20 @@
 import React from "react";
-import { Image, StyleSheet, View } from "react-native";
+import { Image, StyleSheet, View, TouchableOpacity } from "react-native";
 import colors from "../config/colors";
+import Icon from "react-native-vector-icons/Ionicons";
 
-function ViewImageScreen(props) {
+function ViewImageScreen({ navigation }) {
+  const image = navigation.getParam("image");
   return (
     <View style={styles.container}>
-      <View style={styles.closeIcon}></View>
-      <View style={styles.deleteIcon}></View>
+      <TouchableOpacity style={styles.backButton}>
+        <Icon name="close-circle" size={40} color={colors.white} />
+      </TouchableOpacity>
+
       <Image
         resizeMode="contain"
         style={styles.image}
-        source={require("../assets/chairImage.jpeg")}
+        source={{ uri: image }}
       />
     </View>
   );
@@ -40,6 +44,12 @@ const styles = StyleSheet.create({
   image: {
     width: "100%",
     height: "100%",
+  },
+  backButton: {
+    position: "absolute",
+    left: 30,
+    top: 30,
+    zIndex: 2,
   },
 });
 

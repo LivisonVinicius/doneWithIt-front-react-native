@@ -27,8 +27,7 @@
     "react-native-web": "~0.18.7",
     "react-navigation": "^4.4.4",
     "react-navigation-stack": "^2.10.4",
-    "react-router-native": "^6.4.1",
-    "undefined": "@expo-google-fonts/"
+    "react-router-native": "^6.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"

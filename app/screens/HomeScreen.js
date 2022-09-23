@@ -88,7 +88,6 @@ export default function HomeScreen({ navigation }) {
 
   return (
     <SafeAreaView style={styles.container}>
-      {/* <Text style={styles.title}>They are done with these:</Text> */}
       <Image
         style={styles.logo}
         source={require("../assets/DWI_logo_black.png")}
@@ -98,7 +97,9 @@ export default function HomeScreen({ navigation }) {
         data={sellings}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => (
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Product", item)}
+          >
             <Image style={styles.productPhoto} source={{ uri: item.image }} />
             <View style={styles.descriptionBox}>
               <Text style={styles.name}>{item.name}</Text>
