@@ -7,35 +7,35 @@ import LoginScreen from "../screens/LoginScreen";
 import RegisterScreen from "../screens/RegisterScreen";
 
 const screens = {
-  Welcome: {
+Welcome: {
     screen: WelcomeScreen,
     navigationOptions: {
-      header: null,
+      headerShown: false,
     },
   },
+  Home: {
+    screen: HomeScreen,
+    navigationOptions: {
+      headerShown: false,
+    },
+  },
+
   Register: {
     screen: RegisterScreen,
     navigationOptions: {
-      header: null,
+      headerShown: false,
     },
   },
   Login: {
     screen: LoginScreen,
     navigationOptions: {
-      header: null,
-    },
-  },
-
-  Home: {
-    screen: HomeScreen,
-    navigationOptions: {
-      header: null,
+      headerShown: false,
     },
   },
   ViewImage: {
     screen: ViewImageScreen,
     navigationOptions: {
-      header: null,
+      headerShown: false,
     },
   },
 };

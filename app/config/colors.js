@@ -6,4 +6,5 @@ export default {
   lightgray: "#F6F2F4",
   gray: "#CDCACC",
   yellow: "rgba(242, 212, 6, 0.7)",
+  darkgray: "#6D757A",
 };

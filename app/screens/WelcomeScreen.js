@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
   },
   loginText: {
     fontSize: 23,
-    fontWeight: "bold",
+    fontFamily: "Montserrat_600SemiBold",
   },
   registerButton: {
     width: "90%",
@@ -79,8 +79,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   logoText: {
-    fontWeight: "bold",
     fontSize: 20,
+    fontFamily: "Montserrat_600SemiBold",
   },
 });
 

@@ -107,6 +107,7 @@ const styles = StyleSheet.create({
     color: colors.gray,
     position: "absolute",
     left: 30,
+    zIndex: 2,
   },
   loginButton: {
     width: "90%",
@@ -119,7 +120,7 @@ const styles = StyleSheet.create({
   },
   loginText: {
     fontSize: 23,
-    fontWeight: "bold",
+    fontFamily: "Montserrat_600SemiBold",
     color: colors.white,
   },
 });
