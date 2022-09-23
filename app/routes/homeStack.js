@@ -4,10 +4,17 @@ import WelcomeScreen from "../screens/WelcomeScreen";
 import ViewImageScreen from "../screens/ViewImageScreen";
 import HomeScreen from "../screens/HomeScreen";
 import LoginScreen from "../screens/LoginScreen";
+import RegisterScreen from "../screens/RegisterScreen";
 
 const screens = {
   Welcome: {
     screen: WelcomeScreen,
+    navigationOptions: {
+      header: null,
+    },
+  },
+  Register: {
+    screen: RegisterScreen,
     navigationOptions: {
       header: null,
     },
@@ -18,6 +25,7 @@ const screens = {
       header: null,
     },
   },
+
   Home: {
     screen: HomeScreen,
     navigationOptions: {

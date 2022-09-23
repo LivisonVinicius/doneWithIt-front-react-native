@@ -12,35 +12,49 @@ import colors from "../config/colors";
 import IconF from "react-native-vector-icons/FontAwesome5";
 import IconE from "react-native-vector-icons/Entypo";
 
-function LoginScreen({ navigation }) {
+function RegisterScreen({ navigation }) {
   const pressBackHandler = () => {
     navigation.goBack();
   };
   const pressHandler = () => {
-    navigation.navigate("Home");
+    navigation.navigate("Welcome");
   };
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
   return (
     <View style={styles.container}>
       <TouchableHighlight style={styles.backButton} onPress={pressBackHandler}>
         <IconF name="arrow-left" size={30} />
       </TouchableHighlight>
       <IconE
-        name="mail"
+        name="user"
         style={[styles.icon, { top: 330 }]}
         size={20}
         color={colors.gray}
       />
       <IconE
-        name="lock"
+        name="mail"
         style={[styles.icon, { top: 390 }]}
+        size={20}
+        color={colors.gray}
+      />
+      <IconE
+        name="lock"
+        style={[styles.icon, { top: 450 }]}
         size={20}
         color={colors.gray}
       />
       <Image
         style={styles.logo}
         source={require("../assets/DWI_logo_black.png")}
+      />
+      <TextInput
+        style={styles.input}
+        editable
+        numberOfLines={1}
+        onChangeText={(text) => setName(text)}
+        value={name}
       />
       <TextInput
         style={styles.input}
@@ -58,7 +72,7 @@ function LoginScreen({ navigation }) {
         value={password}
       />
       <TouchableOpacity style={styles.loginButton} onPress={pressHandler}>
-        <Text style={styles.loginText}>Log in</Text>
+        <Text style={styles.loginText}>Register</Text>
       </TouchableOpacity>
     </View>
   );
@@ -110,4 +124,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default LoginScreen;
+export default RegisterScreen;

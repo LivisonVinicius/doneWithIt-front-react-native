@@ -14,6 +14,9 @@ function WelcomeScreen({ navigation }) {
   const pressHandler = () => {
     navigation.navigate("Login");
   };
+  const registerPressHandler = () => {
+    navigation.navigate("Register");
+  };
   return (
     <ImageBackground
       style={styles.background}
@@ -29,9 +32,12 @@ function WelcomeScreen({ navigation }) {
       <TouchableHighlight style={styles.loginButton} onPress={pressHandler}>
         <Text style={styles.loginText}>Log in</Text>
       </TouchableHighlight>
-      <View style={styles.registerButton}>
+      <TouchableHighlight
+        style={styles.registerButton}
+        onPress={registerPressHandler}
+      >
         <Text style={styles.loginText}>New here? Register</Text>
-      </View>
+      </TouchableHighlight>
     </ImageBackground>
   );
 }
